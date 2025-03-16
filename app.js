@@ -18,6 +18,14 @@ dotenv.config();
 const app = express();
 const PORT = 6000;
 
+// HTTP Server and Socket.io setup
+const server = http.createServer(app);
+const io = new Server(server, {
+  cors: {
+    origin: "*" , // Frontend origins
+    methods: ["GET", "POST"],
+  },
+});
 
 const corsOptions = {
   origin: ["http://localhost:3000", "https://kivicoin.com"], // Add both URLs here
@@ -33,14 +41,7 @@ const mongoDb = mongoose
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.error(err));
 
-// HTTP Server and Socket.io setup
-const server = http.createServer(app);
-const io = new Server(server, {
-  cors: {
-    origin: ["http://localhost:3000", "https://kivicoin.com"], // Frontend origins
-    methods: ["GET", "POST"],
-  },
-});
+
 
 // Middleware
 
