@@ -28,7 +28,7 @@ const io = new Server(server, {
 });
 
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://kivicoin.com"], // Add both URLs here
+  origin: "*", // Add both URLs here
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type"],
 };
