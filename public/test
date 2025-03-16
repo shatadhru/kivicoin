@@ -1,0 +1,513 @@
+<>
+  {/* Bootstrap */}
+  {/* meta tags and other links */}
+  <meta charSet="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HYIPLAB - HYIP Investment HTML template</title>
+  <link
+    rel="icon"
+    type="image/png"
+    href="assets/images/favicon.png"
+    sizes="16x16"
+  />
+ 
+  {/* fontawesome 5  */}
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  {/* line-awesome webfont */}
+  <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/vendor/animate.min.css" />
+  {/* slick slider css */}
+  <link rel="stylesheet" href="assets/css/vendor/slick.css" />
+  <link rel="stylesheet" href="assets/css/vendor/dots.css" />
+  {/* dashdoard main css */}
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <div className="preloader">
+    <div className="preloader-container">
+      <span className="animated-preloader" />
+    </div>
+  </div>
+  {/* scroll-to-top start */}
+  <div className="scroll-to-top">
+    <span className="scroll-icon">
+      <i className="fa fa-rocket" aria-hidden="true" />
+    </span>
+  </div>
+  {/* scroll-to-top end */}
+  <div className="full-wh">
+    {/* STAR ANIMATION */}
+    <div className="bg-animation">
+      <div id="stars" />
+      <div id="stars2" />
+      <div id="stars3" />
+      <div id="stars4" />
+    </div>
+    {/* / STAR ANIMATION */}
+  </div>
+  <div className="page-wrapper">
+    {/* header-section start  */}
+    <header className="header">
+      <div className="header__bottom">
+        <div className="container">
+          <nav className="navbar navbar-expand-xl p-0 align-items-center">
+            <a className="site-logo site-title" href="index.html">
+              <img src="assets/images/logo.png" alt="site-logo" />
+            </a>
+            <ul className="account-menu mobile-acc-menu">
+              <li className="icon">
+                <a href="login.html">
+                  <i className="las la-user" />
+                </a>
+              </li>
+            </ul>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="menu-toggle" />
+            </button>
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
+              <ul className="navbar-nav main-menu m-auto">
+                <li>
+                  {" "}
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  {" "}
+                  <a href="about.html">About Us</a>
+                </li>
+                <li>
+                  {" "}
+                  <a href="plan.html">Plan</a>
+                </li>
+                <li>
+                  <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li className="menu_has_children">
+                  <a href="#0">Blog</a>
+                  <ul className="sub-menu">
+                    <li>
+                      <a href="blog.html">Blog Posts</a>
+                    </li>
+                    <li>
+                      <a href="blog-details.html">Blog Details</a>
+                    </li>
+                  </ul>
+                </li>
+                <li className="menu_has_children">
+                  <a href="#0">Page</a>
+                  <ul className="sub-menu">
+                    <li>
+                      <a href="error-404.html">Error - 404</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+              <div className="nav-right">
+                <ul className="account-menu ml-3">
+                  <li className="icon">
+                    <a href="login.html">
+                      <i className="las la-user" />
+                    </a>
+                  </li>
+                </ul>
+                <select className="select d-inline-block w-auto ml-xl-3">
+                  <option>Eng</option>
+                  <option>Ban</option>
+                  <option>Hin</option>
+                </select>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      {/* header__bottom end */}
+    </header>
+    {/* header-section end  */}
+    {/* inner hero start */}
+    <section
+      className="inner-hero bg_img"
+      data-background="assets/images/bg/bg-1.jpg"
+    >
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6">
+            <h2 className="page-title">Dashboard</h2>
+            <ul className="page-breadcrumb">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>Dashboard</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    {/* inner hero end */}
+    {/* dashboard section start */}
+    <div className="pt-120 pb-120">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-lg-12">
+            <div className="row mb-none-30">
+              <div className="col-xl-4 col-sm-6 mb-30">
+                <div className="d-widget d-flex flex-wrap">
+                  <div className="col-8">
+                    <span className="caption">Deposit Wallet Balance</span>
+                    <h4 className="currency-amount">$255</h4>
+                  </div>
+                  <div className="col-4">
+                    <div className="icon ml-auto">
+                      <i className="las la-dollar-sign" />
+                    </div>
+                  </div>
+                </div>
+                {/* d-widget-two end */}
+              </div>
+              <div className="col-xl-4 col-sm-6 mb-30">
+                <div className="d-widget d-flex flex-wrap">
+                  <div className="col-8">
+                    <span className="caption">Interest Wallet Balance</span>
+                    <h4 className="currency-amount">$1,105</h4>
+                  </div>
+                  <div className="col-4">
+                    <div className="icon ml-auto">
+                      <i className="las la-wallet" />
+                    </div>
+                  </div>
+                </div>
+                {/* d-widget-two end */}
+              </div>
+              <div className="col-xl-4 col-sm-6 mb-30">
+                <div className="d-widget d-flex flex-wrap">
+                  <div className="col-8">
+                    <span className="caption">Total Invest</span>
+                    <h4 className="currency-amount">$500</h4>
+                  </div>
+                  <div className="col-4">
+                    <div className="icon ml-auto">
+                      <i className="las la-cubes " />
+                    </div>
+                  </div>
+                </div>
+                {/* d-widget-two end */}
+              </div>
+              <div className="col-xl-4 col-sm-6 mb-30">
+                <div className="d-widget d-flex flex-wrap">
+                  <div className="col-8">
+                    <span className="caption">Total Deposit</span>
+                    <h4 className="currency-amount">$1,050</h4>
+                  </div>
+                  <div className="col-4">
+                    <div className="icon ml-auto">
+                      <i className="las la-credit-card" />
+                    </div>
+                  </div>
+                </div>
+                {/* d-widget-two end */}
+              </div>
+              <div className="col-xl-4 col-sm-6 mb-30">
+                <div className="d-widget d-flex flex-wrap">
+                  <div className="col-8">
+                    <span className="caption">Total Withdraw</span>
+                    <h4 className="currency-amount">$1703</h4>
+                  </div>
+                  <div className="col-4">
+                    <div className="icon ml-auto">
+                      <i className="las la-cloud-download-alt" />
+                    </div>
+                  </div>
+                </div>
+                {/* d-widget-two end */}
+              </div>
+              <div className="col-xl-4 col-sm-6 mb-30">
+                <div className="d-widget d-flex flex-wrap">
+                  <div className="col-8">
+                    <span className="caption">Referral Earnings</span>
+                    <h4 className="currency-amount">$1710.5</h4>
+                  </div>
+                  <div className="col-4">
+                    <div className="icon ml-auto">
+                      <i className="las la-user-friends" />
+                    </div>
+                  </div>
+                </div>
+                {/* d-widget-two end */}
+              </div>
+            </div>
+            {/* row end */}
+            <div className="row mt-50">
+              <div className="col-lg-12">
+                <div className="table-responsive--md p-0">
+                  <table className="table style--two white-space-nowrap">
+                    <thead>
+                      <tr>
+                        <th>Date</th>
+                        <th>Transaction ID</th>
+                        <th>Amount</th>
+                        <th>Wallet</th>
+                        <th>Details</th>
+                        <th>Post Balance</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td data-label="Date">21/02/2020</td>
+                        <td data-label="Transaction ID">
+                          <span className="base--color">DZQXF5NAN2AT</span>
+                        </td>
+                        <td data-label="Amount">
+                          <span className="text-success">+ $17.5</span>
+                        </td>
+                        <td data-label="Wallet">
+                          <span className="badge base--bg">
+                            Interest Wallet
+                          </span>
+                        </td>
+                        <td data-label="Details">
+                          17.5 USD Interest From Crown
+                        </td>
+                        <td data-label="Post Balance">$22991.9</td>
+                      </tr>
+                      <tr>
+                        <td data-label="Date">21/02/2020</td>
+                        <td data-label="Transaction ID">
+                          <span className="base--color">DZQXF5NAN2AT</span>
+                        </td>
+                        <td data-label="Amount">
+                          <span className="text-success">+ $17.5</span>
+                        </td>
+                        <td data-label="Wallet">
+                          <span className="badge base--bg">
+                            Interest Wallet
+                          </span>
+                        </td>
+                        <td data-label="Details">
+                          17.5 USD Interest From Crown
+                        </td>
+                        <td data-label="Post Balance">$22991.9</td>
+                      </tr>
+                      <tr>
+                        <td data-label="Date">21/02/2020</td>
+                        <td data-label="Transaction ID">
+                          <span className="base--color">DZQXF5NAN2AT</span>
+                        </td>
+                        <td data-label="Amount">
+                          <span className="text-success">+ $17.5</span>
+                        </td>
+                        <td data-label="Wallet">
+                          <span className="badge base--bg">
+                            Interest Wallet
+                          </span>
+                        </td>
+                        <td data-label="Details">
+                          17.5 USD Interest From Crown
+                        </td>
+                        <td data-label="Post Balance">$22991.9</td>
+                      </tr>
+                      <tr>
+                        <td data-label="Date">21/02/2020</td>
+                        <td data-label="Transaction ID">
+                          <span className="base--color">DZQXF5NAN2AT</span>
+                        </td>
+                        <td data-label="Amount">
+                          <span className="text-success">+ $17.5</span>
+                        </td>
+                        <td data-label="Wallet">
+                          <span className="badge base--bg">
+                            Interest Wallet
+                          </span>
+                        </td>
+                        <td data-label="Details">
+                          17.5 USD Interest From Crown
+                        </td>
+                        <td data-label="Post Balance">$22991.9</td>
+                      </tr>
+                      <tr>
+                        <td data-label="Date">21/02/2020</td>
+                        <td data-label="Transaction ID">
+                          <span className="base--color">DZQXF5NAN2AT</span>
+                        </td>
+                        <td data-label="Amount">
+                          <span className="text-success">+ $17.5</span>
+                        </td>
+                        <td data-label="Wallet">
+                          <span className="badge base--bg">
+                            Interest Wallet
+                          </span>
+                        </td>
+                        <td data-label="Details">
+                          17.5 USD Interest From Crown
+                        </td>
+                        <td data-label="Post Balance">$22991.9</td>
+                      </tr>
+                      <tr>
+                        <td data-label="Date">21/02/2020</td>
+                        <td data-label="Transaction ID">
+                          <span className="base--color">DZQXF5NAN2AT</span>
+                        </td>
+                        <td data-label="Amount">
+                          <span className="text-success">+ $17.5</span>
+                        </td>
+                        <td data-label="Wallet">
+                          <span className="badge base--bg">
+                            Interest Wallet
+                          </span>
+                        </td>
+                        <td data-label="Details">
+                          17.5 USD Interest From Crown
+                        </td>
+                        <td data-label="Post Balance">$22991.9</td>
+                      </tr>
+                      <tr>
+                        <td data-label="Date">21/02/2020</td>
+                        <td data-label="Transaction ID">
+                          <span className="base--color">DZQXF5NAN2AT</span>
+                        </td>
+                        <td data-label="Amount">
+                          <span className="text-success">+ $17.5</span>
+                        </td>
+                        <td data-label="Wallet">
+                          <span className="badge base--bg">
+                            Interest Wallet
+                          </span>
+                        </td>
+                        <td data-label="Details">
+                          17.5 USD Interest From Crown
+                        </td>
+                        <td data-label="Post Balance">$22991.9</td>
+                      </tr>
+                      <tr>
+                        <td data-label="Date">21/02/2020</td>
+                        <td data-label="Transaction ID">
+                          <span className="base--color">DZQXF5NAN2AT</span>
+                        </td>
+                        <td data-label="Amount">
+                          <span className="text-success">+ $17.5</span>
+                        </td>
+                        <td data-label="Wallet">
+                          <span className="badge base--bg">
+                            Interest Wallet
+                          </span>
+                        </td>
+                        <td data-label="Details">
+                          17.5 USD Interest From Crown
+                        </td>
+                        <td data-label="Post Balance">$22991.9</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            {/* row end */}
+          </div>
+        </div>
+      </div>
+    </div>
+    {/* dashboard section end */}
+    {/* footer section start */}
+    <footer
+      className="footer bg_img"
+      data-background="assets/images/bg/bg-7.jpg"
+    >
+      <div className="footer__top">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-12 text-center">
+              <a href="#0" className="footer-logo">
+                <img src="assets/images/logo.png" alt="image" />
+              </a>
+              <ul className="footer-short-menu d-flex flex-wrap justify-content-center mt-4">
+                <li>
+                  <a href="#0">Home</a>
+                </li>
+                <li>
+                  <a href="#0">Privacy &amp; Policy</a>
+                </li>
+                <li>
+                  <a href="#0">Terms &amp; Conditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="footer__bottom">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 text-md-left text-center">
+              <p>
+                © 2020{" "}
+                <a href="index.html" className="base--color">
+                  HYIPLAB
+                </a>
+                . All rights reserved
+              </p>
+            </div>
+            <div className="col-md-6">
+              <ul className="social-link-list d-flex flex-wrap justify-content-md-end justify-content-center">
+                <li>
+                  <a
+                    href="#0"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="facebook"
+                  >
+                    <i className="lab la-facebook-f" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#0"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="twitter"
+                  >
+                    <i className="lab la-twitter" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#0"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="pinterest"
+                  >
+                    <i className="lab la-pinterest-p" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#0"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="pinterest"
+                  >
+                    <i className="lab la-pinterest-in" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    {/* footer section end */}
+  </div>{" "}
+  {/* page-wrapper end */}
+  {/* jQuery library */}
+  {/* bootstrap js */}
+  {/* slick slider js */}
+  {/* dashboard custom js */}
+</>
